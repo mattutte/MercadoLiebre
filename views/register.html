@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Registro</title>
+            <link rel="stylesheet" href="/CSS/register.css">
+        </head>
+
+
+        <body>
+            <div class="main-section">
+                
+                <div class="logo">
+                    <a href='../'><img src="img/logo-mercado-liebre.svg" alt="logo"></a>
+                </div>
+
+                <div class="account-container">
+                    <form>
+                        <div class="box-container">
+                            <h1 class="titulo">Crea tu cuenta</h1>
+                            <div class="campos">
+                                <label for="fname">Nombre</label>
+                                <input type="text" id="fname" name="nombre">
+                            </div>
+                            <div class="campos">
+                                <label for="fapellido">Apellido</label>
+                                <input type="text" id="fapellido" name="apellido">
+                            </div>
+                            <div class="campos">
+                                <label for="fbirthday">Fecha de Nacimiento</label>
+                                <input type="date" id="fbirthday" name="nacimiento"><br><br>
+                                <label for="fdomicilio">Domicilio</label>
+                                <input type="text" id="fdomicilio" name="domicilio">
+                            </div>
+                            <div class="categorias">
+                                <label class="options">Perfil</label>
+                                <input type="radio" id="buy" name="perfil" value="compra">
+                                <label>Comprar</label>
+                                <input type="radio" id="buy" name="perfil" value="venta">
+                                <label>Vender</label>
+                            </div>
+                            <div class="categorias">
+                                <label class="options">Categorias de interes</label>
+                                <div class="cat-content">
+                                    <div class="cat.left">
+                                        <input type="checkbox" id="elec" name="interes1" value="electro">
+                                        <label for="elec">Electro</label><br>
+                                        <input type="checkbox" id="fashion" name="interes2" value="moda">
+                                        <label for="fashion">Moda</label><br>
+                                        <input type="checkbox" id="home" name="interes3" value="hogar">
+                                        <label for="elec">Hogar</label>
+                                    </div>
+                                    <div class="cat-right">
+                                        <input type="checkbox" id="toy" name="interes4" value="jugueteria">
+                                        <label for="elec">Juguetería</label><br>
+                                        <input type="checkbox" id="health" name="interes5" value="vida sana">
+                                        <label for="health">Vida sana</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="campos">
+                                <label for="foto">Foto de usuario:</label>
+                                <input type="file" id="foto_usuario" name="foto">
+                            </div>
+                            <div class="campos">
+                                <label for="fpass">Contraseña</label>
+                                <input type="password" id="fpass" name="pwd">
+                            </div>
+                            <div class="campos">
+                                <label for="fpass2">Repita contraseña</label>
+                                <input type="password" id="fpass2" name="pwd2">
+                            </div>
+                            <div class="botones">
+                                <form action="/resultadoRegister" method="POST">
+                                    <input type=button onClick="location.href='../'" value='Submit' class="botonSubmit">
+                                </form>
+                
+                                <button type="reset" class="botonBorrar">Borrar</button>    
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </body>
+    </html>

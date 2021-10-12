@@ -1,0 +1,360 @@
+* {
+    margin: 0px;    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:#EAC926;
+}
+
+header.main-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.upper-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-belt {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50%;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nav-searchbar {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.cuadroInput {
+    height: 50%;
+    width: 100%;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 20px;
+}
+
+.cuadroInput:focus {
+    outline:none;
+}
+
+.nav-right {
+    height: 50%;
+    width:30px;
+}
+
+.searchBox {
+    position: static;
+    right: 0;
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.main-navbar {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+.left-navbar, .right-navbar {
+    display: flex;
+}
+
+.left-navbar a, .right-navbar a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 16px 8px;
+    align-items: center;
+}
+
+.left-navbar li {
+    list-style-type: none;
+}
+
+.main-navbar a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.compraCuotas {
+    text-align: center;
+    height: 50%;
+}
+.textoCompraCuotas {
+    display: block;
+}
+
+.burger-menu {
+    font-size: 25px;
+    background-color: #1259c3;
+    color: white;
+    width: 50px;
+    display: flex;
+    border-radius: 8px;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iconosHeader {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 5px;
+}
+    
+.precio {font-size:18px}
+
+.Descuento {
+    font-size:16px;
+    color: #39b54a; 
+}
+.Descripcion {
+    font-size:16px;
+    display: none;
+}
+
+.Campos:hover .Descripcion {
+    display:block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+main {
+    text-align: center;
+    margin: auto;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+main section article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:relative;
+    left: 35%;
+    top: -15px;
+}
+
+.campos {
+    border-top: 1px solid #ebebeb;
+}
+
+.precio-descuento {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.precio {
+    flex-grow: 0.3;
+}
+
+.Descuento {
+    flex-grow: 0.7;
+    text-align: left;
+}
+
+.Descripcion {
+    display:none;
+}
+
+.Descripcion:hover {
+    display:block;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.articulos:hover h3 {
+    display: initial;
+}
+
+.main-navbar ul {
+    list-style: none; 
+    margin:0;
+    padding: 0;
+    display: block;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articlesFooter article {
+    max-width: 400px;
+}
+
+.iconosFooter {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.iconosFooter i {
+    transition: color 100ms;
+    /*transition-delay: 1s;*/
+}
+
+
+footer article {
+    margin-bottom: 50px;
+}
+
+.precio, .Descuento {
+    display: block;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.imagen-producto {
+    width: 90%;
+}
+
+.fa-truck {
+    transition: transform 1s;
+}
+
+.fa-truck:hover {
+    transform: rotateZ(-90deg);
+}
+
+@media (max-width: 361px){
+    .Descripcion {
+        display: none;
+    }
+    .main-navbar {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    main section article {
+        max-width: 60%;
+    }
+    .nav-searchbar {
+        width: 100%;
+    }
+    .searchBox {
+        font-size: 10px;
+        justify-content: center;
+    }
+    .burger-menu {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        padding: 5px 0px;
+
+    }
+}
+
+@media (min-width: 362px) and (max-width: 768px){
+    main section article {
+        max-width: 40%;
+    }
+    .main-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left-navbar a, .right-navbar a {
+        padding: 8px 4px;
+    }
+
+}
+
+@media (min-width: 769px){
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 20%;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .upper-header {
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-belt {
+        width: 70%;
+        justify-content: space-between;
+    }
+    .compraCuotas {
+        width: 30%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .articlesFooter {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .articlesFooter article {
+        margin: 0px 10px;
+    }
+    .fas.fa-user-shield:hover, .fas.fa-shipping-fast:hover, .far.fa-credit-card:hover{
+        color: #FF6F61;
+        /*transition-delay: 0s;*/
+    }
+}
+
+
