@@ -5,8 +5,8 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-app.listen(3030, () => {
-    //console.log("Bien ahí");
+app.listen(process.env.PORT || 3030, () => {
+    console.log("Bien ahí");
 }); 
 
 app.get('/', (req, res) => {
@@ -28,5 +28,4 @@ app.get('/login', (req, res) => {
     const archivo = path.join(__dirname, './views/login.html')
     res.sendFile(archivo);
 });
-
 
