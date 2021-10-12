@@ -87,7 +87,7 @@ input[type=text], input[type=password]{
 
     .account-container {
         width: 100%;
-        padding: 0px 100px;
+        padding: 0px 20px;
     }
 }
 
