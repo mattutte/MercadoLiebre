@@ -79,3 +79,15 @@ input[type=text], input[type=password]{
     background-color: #0022AA;
     color: white;
 }
+
+@media (max-width: 361px){
+    body {
+        max-width: 100%;
+    }
+
+    .account-container {
+        width: 100%;
+        padding: 0px 100px;
+    }
+}
+
