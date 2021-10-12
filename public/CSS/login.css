@@ -188,11 +188,17 @@ main input[type=text], main input[type=password], main input[type=button] {
     width: 100%;
 }
 
+.botonEnviar:hover {
+    background-color: #0022AA;
+
+}
 
 main input[type=button]{
     background-color: #1259c3;
     color:#fff;
 }
+
+
 
 @media (max-width: 361px){
     .main-navbar {

@@ -40,6 +40,10 @@ header.main-header {
     vertical-align: middle;
 }
 
+.logo:hover {
+    transform: skewY(5deg);
+}
+
 .nav-searchbar {
     display: flex;
     width: 50%;
@@ -75,6 +79,28 @@ header.main-header {
     align-items: center;
 }
 
+.searchBox button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    transition: 
+}
+
+.searchButton:active {
+    box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.6)
+}
+
+.searchBox button:hover {
+    background-color: #ddd;
+}
+
+.searchBar button i:active {
+    transform: scale(0.9);
+}
+
 .main-navbar {
     width:100%;
     display: flex;
@@ -106,8 +132,13 @@ header.main-header {
     text-align: center;
     height: 50%;
 }
+
 .textoCompraCuotas {
     display: block;
+}
+
+.compraCuotas:hover {
+    font-size: 18px;
 }
 
 .burger-menu {
@@ -218,7 +249,7 @@ footer {
     text-align: center;
 }
 
-.articulos:hover h3 {
+.articulos .campos:hover h3 {
     display: initial;
 }
 
