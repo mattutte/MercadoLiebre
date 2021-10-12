@@ -160,12 +160,15 @@ article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
+/* FORMULARIO */
+
 main {
     background-color: #ebebeb;
 }
 
 .login-container {
-    display: block;
+    display: flex;
+    justify-content: center;
     padding: 14px 18px;
     width: 500px;
     margin: auto;
@@ -180,6 +183,11 @@ main input[type=text], main input[type=password], main input[type=button] {
     border-radius: 3px;
     width: 100%;
 }
+
+.formulario {
+    width: 100%;
+}
+
 
 main input[type=button]{
     background-color: #1259c3;
@@ -200,6 +208,13 @@ main input[type=button]{
         font-size: 10px;
         justify-content: center;
     }
+
+    .login-container {
+        display: flex;
+        padding: 14px 18px;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 362px) and (max-width: 768px){
@@ -210,6 +225,18 @@ main input[type=button]{
     .left-navbar a, .right-navbar a {
         padding: 8px 4px;
     }
+
+    .login-container {
+        display: flex;
+        padding: 14px 18px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+    
 
 }
 
@@ -242,4 +269,15 @@ main input[type=button]{
         color: #FF6F61;
         /*transition-delay: 0s;*/
     }
+        .login-container {
+        display: flex;
+        padding: 14px 18px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .formulario {
+        max-width: 400px;
+    }
+    
 }

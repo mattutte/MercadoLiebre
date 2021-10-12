@@ -81,6 +81,12 @@ input[type=text], input[type=password]{
 }
 
 @media (max-width: 377px){
+    
+    .main-section {
+        width: 100%;
+        margin: auto;
+    }
+    
     body {
         max-width: 100%;
     }
